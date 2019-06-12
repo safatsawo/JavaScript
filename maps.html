@@ -1,0 +1,48 @@
+
+
+
+ <html>
+     <head>
+         <body>
+             <script>
+          
+let x = new Map([[1, 'is a number key']]);
+let today = new Date()
+
+//anything can be a key
+x.set(today.toString(), 111)
+x.set(today, 222);
+x.delete(today.toString());
+
+alert('The map contains', x.size, 'elements.');
+alert('The map has a today Date key:', x.has(today));
+alert('The map has a today string key:', x.has(today.toString()));
+
+//values and keys
+x.forEach((value, key, map) => alert(value, key, map));
+
+//iterable
+for (let value of x) {
+  alert(value);
+}
+
+//iterable values
+for (let value of x.values()) {
+  alert(value);
+}
+
+//iterable keys
+for (let value of x.keys()) {
+  alert(value);
+}
+
+//iterable entries (key, value)
+for (let value of x.entries()) {
+  alert(value);
+}
+
+
+             </script>
+         </body>
+     </head>
+ </html>

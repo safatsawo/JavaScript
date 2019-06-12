@@ -1,0 +1,22 @@
+ <html>
+     <head>
+         <body>
+             <script>
+      var longFn = function() {
+  return new Promise(function(res, rej) {
+    setTimeout(res, 1000);
+  });
+};
+
+var coolFn = function() {
+  alert('cool');
+};
+
+// logs cool after 1 second
+longFn().then(coolFn);
+
+
+             </script>
+         </body>
+     </head>
+ </html>

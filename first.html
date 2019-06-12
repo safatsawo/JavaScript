@@ -1,0 +1,34 @@
+<html>
+    
+<body>
+
+        <script>
+            var firstName = prompt("WHAT IS YOUR NAME?");
+            var secondName = prompt("ENTER YOUR SECOND NAME ");
+
+            var score = prompt(" ENTER YOUR SCORES");
+            var scores = parseInt(score);
+            if (scores === "100" && scores >="80"){
+              alert(" "+firstName + " GRADE A, YOU PASSED WITH YOUR SCORE BEING " +scores);
+            }
+            else if (scores <= "79" && scores >="70"){
+              alert(" "+firstName + " GRADE B, YOU PASSED WITH YOUR SCORE BEING " +scores);
+            }  
+            else if (scores <= "69" && scores >="50"){
+              alert(" "+firstName + " GRADE C, YOU PASSED WITH YOUR SCORE BEING " +scores);
+            }  
+            else if (scores <= "59" && scores >="40"){
+              alert(" "+firstName + " GRADE B, YOU PASSED WITH YOUR SCORE BEING " +scores);
+            } 
+              
+             
+
+
+
+            document.write("YOU FULL NAME IS "+firstName +" "+ secondName + " AND YOUR SCORE WAS "+scores);
+                
+            </script>
+  </body>
+
+    
+</html>

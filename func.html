@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+
+
+function report(firstName, lastName, ...colors) 
+{  let phrase = colors.length === 0 ? 'no colors' :    colors.length === 1 ? 'the color ' + colors[0]:    
+'the colors ' + colors.join(' and ');  console.log(firstName, lastName, 'likes', phrase + '.');
+
+ } 
+
+
+report('John', 'Doe'); // John Doe likes no colors. 
+
+//report('Mark', 'Volkmann', 'yellow'); // Mark Volkmann likes the color yellow. 
+
+//report('Tami', 'Volkmann', 'pink', 'blue'); // Tami Volkmann likes the colors pink and blue.
+
+
+
+</script>
+</html>

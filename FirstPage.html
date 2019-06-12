@@ -1,0 +1,292 @@
+<html>
+	<head>
+	<title>WISCO E-VOTE ::Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"notepad
+  
+		<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+		<script src="../assets/js/bootstrap.js" type="text/javascript"></script>
+		<link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		
+		<style>
+			.footer-link:hover{
+				cursor:pointer;
+				
+				}
+			.wc-nav-link{
+				
+				font-size:17px;
+				background-color:#6CF;
+			}
+			
+			.wc-nav-link:hover{
+				text-decoration:none;
+				background-color:red;
+			}
+			
+			.col-md-1{
+				padding-top:20px;
+			
+			}
+			
+			.footer{
+				position:relative;
+				margin:auto;
+				bottom:0;
+			}
+			
+			.vshadow{
+				box-shadow: 5px 5px 5px #FFFF99;
+				}
+		
+		</style>
+        
+        <script type="text/javascript">
+        	function loadPage(){
+				window.location.href='https://www.google.com';
+				//alert(mabfhbsJ);
+				}
+				
+			function logout(){
+				window.location.href='../index.html';
+				//alert(mabfhbsJ);
+				}
+				
+			function registerCand(){
+				window.location.href='register-candidate.html';
+				 
+				//alert(mabfhbsJ);
+				}
+			function regVoter(){
+				window.location.href='register-voter.html';
+				 
+				//alert(mabfhbsJ);
+				}
+				
+			function voteConsole(){
+				window.location.href='http://localhost/vote';
+				 
+				//alert(mabfhbsJ);
+				}
+				
+			
+        </script>
+	</head>
+
+	<body>
+		<div class="container"  style="width:100%; height:100%">
+			<div class="row">
+			<!--This column holds all the pages  layout objects together---> 
+				<div class="col-md-12 navbar">
+					<!--Defines the first row of the page ex, header-->
+						<div class="row">
+							<div class="col-md-12 vshadow" style="background-color:#036; padding-top:0px">
+								<!--logo area-->
+							<div class="col-md-2">
+								<img src="../assets/images/v2.gif" width="80" height="70"/>
+							</div>
+							<div class="col-md-1">
+								
+							</div>
+							
+							<!--Site and Slogan area-->
+							<div class="col-md-6">
+								<h1 style="color:white;">Wisconsin E-Voting <marquee><span style="font-size:15;">Seamless Voting!</span></marquee></h1>
+							</div>
+							<!--link 1area-->
+							<div class="col-md-1"  >
+								<a class="btn wc-nav-link glyphicon glyphicon-home" href="../index.html" style="color:white;" >Home</a>
+							</div>
+							<!--link 2 area-->
+							<div class="col-md-1">
+								<a class="btn wc-nav-link" href="#" style="color:white;" >About</a>
+							</div>
+							<!--link 3 area-->
+							<div class="col-md-1">
+								<a class="btn wc-nav-link"  href="#" style="color:white;" >FAQs</a>
+							</div>
+							</div>
+						
+						</div>
+				
+				</div>
+			</div><!--End of row 1--->
+			<!--Row 2 or Main content container--->
+			<div class="row">
+				<div class="col-md-12" style="height:70%;" ><!--Main body frame for row two--->
+					<div class="row">
+					<!--Column 1 of main content container--->
+						<div class="col-md-8" style="height:50%;">
+						
+							
+				  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					  <li data-target="#myCarousel" data-slide-to="1"></li>
+					  <li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+
+					  <div class="item active">
+						<img src="../assets/images/slides/a1.jpg" alt="Vote All" style="width:100%;">
+						<div class="carousel-caption">
+						  <h3>Vote All</h3>
+						  <p>Elections are is always so much fun!</p>
+						</div>
+					  </div>
+
+					  <div class="item">
+						<img src="../assets/images/slides/a2.jpg" alt="Democracy" style="width:100%;">
+						<div class="carousel-caption">
+						  <h3>Democracy</h3>
+						  <p>Thank you, Everyone!</p>
+						</div>
+					  </div>
+					  
+					   <div class="item">
+						<img src="../assets/images/slides/a4.jpg" alt="Freedom" style="width:100%;">
+						<div class="carousel-caption">
+						  <h3>Freedom</h3>
+						  <p>We love Freedom!</p>
+						</div>
+					  </div>
+					  
+					   <div class="item">
+						<img src="../assets/images/slides/a5.jpg" alt="Life" style="width:100%;">
+						<div class="carousel-caption">
+						  <h3>Life</h3>
+						  <p>We love Life!</p>
+						</div>
+					  </div>
+				  
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					  <span class="glyphicon glyphicon-chevron-left"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					  <span class="glyphicon glyphicon-chevron-right"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				  </div>
+  
+						</div>
+						
+						<!--Column 2 of main content container--->
+						<div class="col-md-4">
+						
+							<p>
+							<h2>Admin Operations</h2></p>
+							<div class=" table  table-condensed">
+                           	  	<div class="input-group" style="width:100%;">
+    								<input id="btnRegCand" name="btnRegCand" type="button" class="btn btn-primary" onClick="registerCand()"  value="Register Candidate" style="width:290px;"/>
+                                
+                                    
+                                   </div>
+                                   <p></p> 
+                                   <div class="input-group" style="width:100%;">
+    								<input id="btnLogin" name="btnLogin" type="button" class="btn btn-primary" onClick="regVoter()"  value="Register Voter" style="width:290px;"/>
+                                
+                                    
+                              </div>
+                                   <p></p>
+                                   <div class="input-group" style="width:100%;">
+    								<input id="btnLogin" name="btnLogin" type="button" class="btn btn-primary" onClick="loadPage()"  value="Generate Ballot" style="width:290px;"/>
+                                    
+                                   </div>
+                                   <p></p>
+                                   <div class="input-group" style="width:100%;">
+    								<input id="btnVote" name="btnVote" type="button" class="btn btn-primary" onClick="voteConsole()"  value="Voter Console" style="width:290px;"/>
+                                    
+                                   </div> 
+                                   <p></p>
+                                    <div class="input-group" style="width:100%;">
+    								<input id="btnIniDb" name="btnIniDb" type="button" class="btn btn-primary"  value="Initialise Voting" style="width:290px;"/>
+                                    
+                                   </div>
+                                    <p></p>
+                                    <div class="input-group" style="width:100%;">
+    								<input id="btnUnDb" name="btnUnDb" type="button" class="btn btn-warning"  value="Clear Initialisation" style="width:290px;"/>
+                                    
+                                   </div>  
+                                   <p></p>
+                                   <div class="input-group" style="width:100%;">
+    								<input id="btnLogin" name="btnLogin" type="button" class="btn btn-danger" onClick="logout()"  value="Logout" style="width:290px;"/>
+                                    
+                                   </div> 
+                           	  	</div>
+                            </div>
+
+						</div>
+					</div>
+				</div>
+			
+			</div><!--Row 2 Ends Here-->
+			<!--Row 3 Begins Here-->
+			<div class="row"> </div><!--Row 3 Ends Here-->		
+			<!--Row 4 Begins Here-->
+			<div class="row">
+				<div class="col-md-12 navbar navbar-fixed-bottom" style="background-color:#036; ">
+					<p style="color:#FFF;">Wisconsin International University college  &copy;2017</p>
+                    <a class="navbar-link footer-link" style="color:rgb(145, 143, 143);">www.wisconstonuniversitycollege.edu.gh</a> ||  <a class="navbar-link footer-link" style="color:#FFF;">Safatsawo@gmail.com || 0574400250</a> ||  <a class="navbar-link footer-link" style="color:#FFF;">Ekobby76@gmail.com ||  0571212224</a>
+                    
+                    
+                     
+
+ 
+
+				
+				</div>
+			</div>
+			
+		
+		</div>
+		
+		<script>
+        	$(document).ready(function(e) {
+                $('#btnIniDb').click(function(e){
+  				data=$('input[name=rbnVote]:radio:checked').val();
+				e.preventDefault(); // Prevent Default Submission
+			  
+				$.post('../serverside/init-vote.php', $(this).serialize() )
+				.done(function(data){
+				  $('#btnIniDb').fadeOut('slow', function(){
+					  $('#btnIniDb').fadeIn('slow').html(data);
+					});
+				})
+				.fail(function(){
+				 alert('Ajax Submit Failed ...');
+				});
+			});
+			
+			
+			$('#btnUnDb').click(function(e){
+  
+				e.preventDefault(); // Prevent Default Submission
+			  
+				$.post('../serverside/clear.php', $(this).serialize() )
+				.done(function(data){
+				  $('#btnUnDb').fadeOut('slow', function(){
+					  $('#btnUnDb').fadeIn('slow').html(data);
+					});
+				})
+				.fail(function(){
+				 alert('Ajax Submit Failed ...');
+				});
+			});
+            });
+			
+			 
+          
+        
+        </script>
+
+	</body>
+
+
+</html>
